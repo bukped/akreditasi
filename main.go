@@ -31,7 +31,4 @@ func main() {
 		log.Fatalf("Unable to retrieve data from document: %v", err)
 	}
 	fmt.Printf("The title of the doc is: %s\n", doc.Title)
-	if got := doc.Title; got == "" {
-		t.Errorf("Response Body : %v, didn't return json", got)
-	}
 }
